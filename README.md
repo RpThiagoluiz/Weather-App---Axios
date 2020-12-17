@@ -9,8 +9,9 @@
 - [ ]  Velocidade do vento
 
 
-`Dependecies` :shipit:
-Styled-components
-Axios
+### Dependecies :shipit:
+`Styled-components`
+`Axios`
 
-Api `openweathermap.org`
+### Api 
+`openweathermap.org`
