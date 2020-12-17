@@ -1,10 +1,16 @@
-import React from 'react'
+import React from "react";
 
 //Styles
-import './styles.css'
+import GlobalStyle from "./assets/styles/globalStyles.js";
 
-const App = () => (
-    <h1>Hello, hi, good morning!</h1>
-)
+const App = () => {
+  return (
+      <>
+        <GlobalStyle/>
+        <h1>Hello, hi, good morning!</h1>
+      </>
+    
+  );
+};
 
-export default App
+export default App;
