@@ -1,16 +1,15 @@
- <h1>Projeto Base</h1>
-        <ul>
-            <li>   nome da cidade, estado, pais </li>
-            <li>   dia da semana, e o horario </li>
-            <li>   imagem de acordo com a temperatura (min - Max) </li>
-            <li>   sensacao termica </li>
-            <li>   % chuva </li>
-            <li>   % Umidade </li>
-            <li>   Velocidade do vento </li>
-        </ul>
+## WebApp ClimaTempo
+
+- [ ]  nome da cidade, estado, pais
+- [ ]  dia da semana, e o horario
+- [ ]  imagem de acordo com a temperatura (min - Max)
+- [ ]  sensacao termica
+- [ ]  % chuva
+- [ ]  % Umidade
+- [ ]  Velocidade do vento
 
 
-`Dependecies`
+`Dependecies` :shipit:
 Styled-components
 Axios
 
