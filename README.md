@@ -2,6 +2,8 @@
 
 - [ ] input OnkeyPress - Loading icon for async function
 - [ ] Button onClick Take user location
+- [ ] When dont found city, send a msg
+- [ ] Extract components for APP.jsx
 - [ ] UPDATE design
 - [ ] Responsive Design
 

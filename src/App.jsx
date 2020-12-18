@@ -1,11 +1,13 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 
 //API-key
 import { API_KEY } from './.env'
 
+
 //Styles
-import GlobalStyle from "./assets/styles/globalStyles.js";
-import { BtnLocation, CityContainer, Content, HeaderContainer, Input, MainContainer, StatsContainer } from "./assets/styles/styles";
+import GlobalStyle from "./assets/styles/globalStyles.js"
+import LoadingDots from './assets/styles/loadingDots'
+import { BtnLocation, CityContainer, Content, HeaderContainer, Input, MainContainer, StatsContainer } from "./assets/styles/styles"
 
 
 //global Scope for Acess
@@ -34,21 +36,39 @@ const App = () => {
     }
   }
 
+  //async
+
+  // useEffect(() => {
+  //   async function getItems() {
+  //     try {
+  //       const { result } = await api.get("https://api.openweathermap.org/data/2.5/");
+  //       setWeather(result);
+  //       setQuery('');
+  //     } catch (error) {
+  //       alert("Ocorreu um erro ao buscar os items");
+  //     }
+  //   }
+  //   getItems();
+  // }, []);
+
+
   //Date
 
   const dateBuilder = (d) => {
-    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let months = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+    let days = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sabado"];
 
     let day = days[d.getDay()];
     let date = d.getDate();
     let month = months[d.getMonth()];
     let year = d.getFullYear();
 
-    return `${day} ${date} ${month} ${year}`
+    return `${day} ${date} de ${month} de ${year}`
   }
 
-  //function Translate - enUs to pt-br
+  //CallComponents
+
+  
   
 
   return (
@@ -85,7 +105,7 @@ const App = () => {
               </Content>
             </CityContainer>
           ) : (
-              <h1>Hi Lorena,</h1>
+            <LoadingDots />
           )}
           
         <BtnLocation>

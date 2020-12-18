@@ -9,6 +9,8 @@ export const MainContainer = styled.div`
     align-items:center;
     justify-content:center;
 
+   
+
 `
 export const StatsContainer = styled.div`
     width: 500px;
@@ -21,6 +23,7 @@ export const StatsContainer = styled.div`
     display:flex;
     flex-direction: column;
     align-items:center;
+    
     
     
 
@@ -203,3 +206,6 @@ export const BtnLocation = styled.button `
 
 
 `
+
+
+
