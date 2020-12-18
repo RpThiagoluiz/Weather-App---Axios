@@ -52,42 +52,136 @@ export const CityContainer = styled.div`
     color:white;
 
 
+
+
+    > .temp {
+        color:red;
+        padding-top: 25px;
+        
+    }
+
+`
+export const HeaderContainer = styled.header`
+
+        text-align:center;
+        margin-top: -50px;
+
     > h3 {
         letter-spacing: 3px;
         text-transform: uppercase;
         font-size: 2.75em;
-
-        
+        flex-grow:1;
         //Props de acordo com a temperatura
         background-image: linear-gradient( 178.1deg,  rgba(246,199,34,1) 13%, rgba(245,149,33,1) 86.3% );
         background-clip:text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 
-        
     }
-    
+
     > small {
         font-size: 1.75em;
+        margin-top: .75em;
         margin-left: .75em;
         padding: 2px;
-        
-        > sup {
-            font-size: .75em;
-            font-weight: bold;
+    }
+
+    > sup {
+        font-size: .75em;
+        font-weight: bold;
     
-            position:relative;
-            top: -5px;
+        position:relative;
+        top: -5px;
+            
+    }
+
+`
+export const Content = styled.div`
+    display:grid;
+    grid-template-columns: 120px 120px 120px;
+    grid-template-rows: 100px 1fr;
+    grid-gap: 25px;
+
+    grid-template-areas:
+        "TEMP HUM FEL"
+        "TALT IMG IMG";
+    
+
+    margin: .75em;
+    
+
+    > .temp {
+        color:red;
+        font-size: 1.75em;
+        
+
+        >sup {
+            font-size: .45em;
+            margin-left: -5px;
         }
     }
 
+    > .humid {
+        color:blue;
+        font-size: 1.75em;
+        
+
+        >sup {
+            font-size: .45em;
+            margin-left: -5px;
+        }
+    }
+
+    > .fell {
+        color:green;
+        font-size: 1.75em;
+        
+
+        >sup {
+            font-size: .45em;
+            
+        }
+    }
+
+    > .temp-min {
+        color:yellow;
+        font-size: 1em;
+        
+
+        >sup {
+            font-size: .45em;
+            margin-left: -5px;
+        }
+    }
+
+    > .temp-max {
+        color:purple;
+        font-size: 1em;
+        
+
+        >sup {
+            font-size: .45em;
+            
+        }
+    }
+
+    > .img-container {
+
+        margin-top: -15px;
+        
+
+        > p {
+            text-align:center;
+        }
+    }
+
+
 `
 
-export const WeatherImg = styled.img `
-    padding-top: 5px;
-    border-radius: 8px;
 
-`
+
+
+
 
 export const BtnLocation = styled.button `
     background-color:red;
